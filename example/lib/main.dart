@@ -1,6 +1,5 @@
 import 'dart:convert';
 
-import 'package:example/custom_form_example.dart';
 import 'package:flutter/material.dart';
 import 'package:wodworx_core/wodworx_core.dart';
 
@@ -40,8 +39,15 @@ class _MyHomePageState extends State<MyHomePage> {
     final data = await Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => CustomFormExample(
-          form: form,
+        builder: (context) => Scaffold(
+          appBar: AppBar(
+            title: const Text('Form'),
+          ),
+          body: CustomForm(
+            form: form,
+            onSubmit: (data) => Navigator.pop(context, data),
+            submitButtonText: "Submit",
+          ),
         ),
       ),
     );
