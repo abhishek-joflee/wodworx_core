@@ -2,6 +2,10 @@
 
 A supporting core library for all the wodworx applications.
 
+## NOTICE
+
+This package is designed specifically for use with Wodworx. It is not intended to be used, modified, or distributed by any other person or entity.
+
 ## Features
 
 - Currently `CustomForm` is the only feature added to this package.
