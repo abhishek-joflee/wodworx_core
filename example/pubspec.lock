@@ -203,9 +203,11 @@ packages:
   wodworx_core:
     dependency: "direct main"
     description:
-      path: ".."
-      relative: true
-    source: path
+      path: "."
+      ref: main
+      resolved-ref: f7263e1960419633952653c1007b9b3005fee5a5
+      url: "https://github.com/abhishek-joflee/wodworx_core.git"
+    source: git
     version: "1.0.0"
 sdks:
   dart: ">=2.19.4 <3.0.0"

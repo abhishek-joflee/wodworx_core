@@ -12,7 +12,9 @@ dependencies:
   flutter:
     sdk: flutter
   wodworx_core:
-    path: ../
+    git:
+      url: https://github.com/abhishek-joflee/wodworx_core.git
+      ref: main
 
   cupertino_icons: ^1.0.2
 
